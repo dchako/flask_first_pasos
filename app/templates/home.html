@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block page_title %}
+
+	<title>Hello from Flask</title>
+
+{% endblock %}
+
+{% block content %}
+
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello World!</h1>
+{% endif %}
+
+{% endblock %}
