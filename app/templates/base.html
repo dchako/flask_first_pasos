@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="scotchApp">
 	<head>
 			<title>Flask App</title>
 			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+      		<script src="../static/js/jquery-2.2.3.min.js"></script>
+      		<!-- load bootstrap and fontawesome via carpeta -->
+      		<link rel="stylesheet" href="../static/bootstrap-3.3.6-dist/css/bootstrap.css" />
+      		<script src="../static/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+      		<!-- load angular and angular route via carpetas-->
+      		<script src="../static/js/angular.js/angular.min.js"></script>
+      		<script src="../static/js/angular.js/angular-route.min.js"></script>
+      		<!-- load app en angular.js via carpetas-->
+      		<script src="../static/js/script.js"></script>
 	</head>
-	<body class="container">
+	<body class="container" ng-controller="mainController">
 		<div>
 			{% block page_title %}{% endblock %}
 			{% block content %}{% endblock %}
