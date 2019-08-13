@@ -1,0 +1,8 @@
+# python 
+*.py[cod]
+*.pyc
+# virtualenv
+.env
+env/
+venv/
+.venv
